@@ -1,0 +1,57 @@
+:root {
+    --color-green: #FFFFFF;
+    --color-red: #FFFFFF;
+    --color-button: #9DC3E9;
+    --color-button2: #53388F;
+    --color-black: #000;
+}
+.switch-button {
+    display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+    display: none;
+}
+.switch-button .switch-button__label {
+    background-color: var(--color-red);
+    width: 5rem;
+    height: 3rem;
+    border-radius: 3rem;
+    display: inline-block;
+    position: relative;
+}
+.switch-button .switch-button__label:before {
+    transition: .2s;
+    display: block;
+    position: absolute;
+    width: 2.5rem;
+    height: 2.5rem;
+    top: 3px;
+    left: 3px;
+    background-color: var(--color-button);
+    content: '';
+    border-radius: 50%;
+    box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+    background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+    transform: translateX(2rem);
+    background-color: var(--color-button2);
+
+}
+
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before + p .mt-10{
+    background-color: #53388F;
+}
+
+
+.heart-button {
+    display: inline-block;
+    border: none;
+    background: none;
+    display: inline-block;
+    text-align:center;
+    margin-left: 5px;
+}
+
