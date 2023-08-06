@@ -74,7 +74,7 @@ function App() {
 
       <h1 className=' font-bold text-center mb-4 text-black text-4xl dark:text-white'>Buscar Ciudad</h1>
         <form onSubmit={getCitys}   className='flex rounded-md overflow-hidden max-w-max mx-auto'>
-          <input id='animeName' type="text" placeholder='Buscar Ciudad...' className='text-black p-2'/>
+          <input id='animeName' type="text" autoComplete='off' placeholder='Buscar Ciudad...' className='text-black p-2'/>
           <button className='bg-blue-400 px-4 dark:bg-indigo-600'>Buscar</button>
         </form>
     
