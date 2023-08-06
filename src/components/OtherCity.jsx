@@ -68,7 +68,7 @@ const OtherCity = ({otherCity}) => {
 </section>
 <button onClick={handleChangeUnitTheme} className='rounded-full bg-white text-cyan-500 py-1 px-6 mt-12 cursor-pointer  dark:bg-[#4580BA] dark:text-[#FFFFFF]'>{isCelsius ? "Cambiar a °F" :"Cambiar a °C"}</button>
       
-      </> : <p className='text-black text-5xl mt-4 dark:text-white'>Buscar Ciudad</p>}
+      </> : <p className='text-black text-4xl font-bold mt-4 dark:text-white'>Buscar Ciudad</p>}
 
     </section>
   )
