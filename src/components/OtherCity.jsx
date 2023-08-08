@@ -31,7 +31,7 @@ const OtherCity = ({otherCity}) => {
     <h4 className='text-xl mt-2'>{otherCity?.weather[0].description}</h4>
     <div className='flex justify-center justify-items-center h-max font-light md:mt-8'>
       <span className='max-w-[203] bg-auto text-6xl leading-[1.5] md:text-8xl'>{isCelsius ? otherCity?.main.temp : celsiusToFahrenheit(otherCity?.main.temp)}{isCelsius ? "°C" :"°F"}</span>
-      <div className='h-28 w-28'>
+      <div className='mt-1 h-20 w-20 md:h-28 md:w-28 '>
           <img className=' h-full block w-full ' src={`https://openweathermap.org/img/wn/${otherCity?.weather[0].icon}@4x.png`} alt='' />
       </div>
     </div>
